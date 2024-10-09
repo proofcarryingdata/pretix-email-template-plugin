@@ -13,9 +13,9 @@ class PluginApp(PluginConfig):
     verbose_name = "Email template helper"
 
     class PretixPluginMeta:
-        name = gettext_lazy("Email Template")
-        author = "Your name"
-        description = gettext_lazy("More email template placeholders, such as {attendee_email}")
+        name = gettext_lazy("Attendee email placeholder")
+        author = "0xPARC team"
+        description = gettext_lazy("Lets you use the {attendee_email} placeholder for email content that corresponds to an order's position.")
         visible = True
         version = __version__
         category = "FEATURE"

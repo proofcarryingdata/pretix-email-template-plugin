@@ -1,9 +1,9 @@
-Email Template
+Attendee email placeholder
 ==========================
 
 This is a plugin for `pretix`_. 
 
-Short description
+Lets you use the {attendee_email} placeholder for email content that corresponds to an order's position.
 
 Development setup
 -----------------
