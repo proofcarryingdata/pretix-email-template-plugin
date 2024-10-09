@@ -1,0 +1,5 @@
+[plugin]
+package = "pretix-email-template-plugin"
+modules = [ "pretix_email_template_plugin" ]
+marketplace_name = "email-template-plugin"
+
