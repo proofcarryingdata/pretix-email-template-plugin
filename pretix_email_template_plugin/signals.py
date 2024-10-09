@@ -18,8 +18,6 @@ class AttendeeEmailPlaceholder(BaseMailTextPlaceholder):
 
     def render(self, context):
         position = context["position"]
-        # TODO: print statement for sanity check -- remove
-        print(f"attendee_email: {position.attendee_email}")
         return position.attendee_email
 
     def render_sample(self, context):
