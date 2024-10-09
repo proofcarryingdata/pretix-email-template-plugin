@@ -1,8 +1,8 @@
 # Register your receivers here
 from django.dispatch import receiver
-
-from pretix.base.signals import register_text_placeholders
 from pretix.base.email import BaseMailTextPlaceholder
+from pretix.base.signals import register_text_placeholders
+
 
 class AttendeeEmailPlaceholder(BaseMailTextPlaceholder):
     def __init__(self):

@@ -7,6 +7,7 @@ try:
 except ImportError:
     raise RuntimeError("Please use pretix 2.7 or above to run this plugin!")
 
+
 class PluginApp(PluginConfig):
     default = True
     name = "pretix_email_template_plugin"
@@ -15,7 +16,9 @@ class PluginApp(PluginConfig):
     class PretixPluginMeta:
         name = gettext_lazy("Attendee email placeholder")
         author = "0xPARC team"
-        description = gettext_lazy("Lets you use the {attendee_email} placeholder for email content that corresponds to an order's position.")
+        description = gettext_lazy(
+            "Lets you use the {attendee_email} placeholder for email content that corresponds to an order's position."
+        )
         visible = True
         version = __version__
         category = "FEATURE"
