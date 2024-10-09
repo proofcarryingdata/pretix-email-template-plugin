@@ -7,16 +7,15 @@ try:
 except ImportError:
     raise RuntimeError("Please use pretix 2.7 or above to run this plugin!")
 
-
 class PluginApp(PluginConfig):
     default = True
     name = "pretix_email_template_plugin"
-    verbose_name = "Email Template"
+    verbose_name = "Email template helper"
 
     class PretixPluginMeta:
         name = gettext_lazy("Email Template")
         author = "Your name"
-        description = gettext_lazy("Short description")
+        description = gettext_lazy("More email template placeholders, such as {attendee_email}")
         visible = True
         version = __version__
         category = "FEATURE"
